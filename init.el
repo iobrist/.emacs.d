@@ -133,3 +133,18 @@ by Prelude.")
  (run-at-time 5 nil 'prelude-tip-of-the-day))
 
 ;;; init.el ends here
+;; A few custom settings
+(global-linum-mode 1)
+(setq-default indent-tabs-mode t)
+(setq-default tab-width 4)
+;; defaults reccomended by steve yegge
+(global-set-key "\C-w" 'backward-kill-word)
+(global-set-key "\C-x\C-k" 'kill-region)
+
+;; scroll bar mode disabled.  can do tool-bar-mode and menu-bar-mode
+;; in a similar manner. I may want to do this later
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
+;; invoke macro to f5
+(global-set-key [f5] 'call-last-kbd-macro)
+;;(setq org-log-done 'note)
+;;; init.el ends here
