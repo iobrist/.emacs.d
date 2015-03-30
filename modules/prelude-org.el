@@ -37,7 +37,8 @@
 (global-set-key "\C-ca" 'org-agenda)
 (global-set-key "\C-cb" 'org-iswitchb)
 (setq org-log-done t)
-(setq org-directory "~/Dropbox/school/org/")
+
+(setq org-directory "~/Sync/org/")
 (setq org-agenda-files (list (concat org-directory
                                      (file-expand-wildcards "/*.org"))))
 (setq org-agenda-include-diary t)
