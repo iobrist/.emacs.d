@@ -56,8 +56,8 @@
   )
 
 (setq org-todo-keywords
-      (quote ((sequence "TODO(t)" "NEXT(n)" "|" "DONE(d)")
-              (sequence "WAITING(w@/!)" "HOLD(h@/!)" "IN-REVIEW(r)" "SENT-BACK(b@/!)" "|" "CANCELLED(c@/!)" "PHONE" "MEETING"))))
+      (quote ((sequence "PROJECT(p)" "TODO(t)" "NEXT(n)" "|" "DONE(d)")
+              (sequence "WAITING(w@/!)" "HOLD(h@/!)" "IN-REVIEW(r)" "SENT-BACK(b@/!)" "|" "CANCELLED(c@/!)" "PHONE"))))
 
 (setq org-todo-keyword-faces
       (quote (("TODO" :foreground "red" :weight bold)
@@ -68,7 +68,7 @@
               ("IN-REVIEW" :foreground "light blue" :weight bold)
               ("SENT-BACK" :foreground "yellow" :weight bold)
               ("CANCELLED" :foreground "forest green" :weight bold)
-              ("MEETING" :foreground "forest green" :weight bold)
+              ("PROJECT" :foreground "#1d829e" :weight bold)
               ("PHONE" :foreground "forest green" :weight bold))))
 
 (setq org-todo-state-tags-triggers
